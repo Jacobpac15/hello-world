@@ -13,7 +13,8 @@ El archivo `hello` contiene el texto que será mostrado al ejecutar el contenedo
 FROM busybox
 COPY hello /hello
 CMD ["cat", "/hello"]
+```
 
 ```bash
 docker build -t helloapp:v1 .
-
+```
