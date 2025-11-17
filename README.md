@@ -7,14 +7,18 @@ El archivo `hello` contiene el texto que será mostrado al ejecutar el contenedo
 
 ---
 
-## 🐳 Dockerfile
+##  Dockerfile
 
 ```dockerfile
 FROM busybox
 COPY hello /hello
 CMD ["cat", "/hello"]
 ```
-
+##  Construir la imagen
 ```bash
 docker build -t helloapp:v1 .
+```
+##  Ejecucion del contenedor
+```bash
+docker run --rm helloapp:v1
 ```
